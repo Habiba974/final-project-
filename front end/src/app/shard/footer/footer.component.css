@@ -1,0 +1,43 @@
+ .footer{
+    background-color: gray ;
+  position: sticky;
+  bottom: 0;
+ }
+
+ .footer .container ul{
+    padding-inline-start: 0px;
+ }
+ .footer .container .icons li{
+display: inline-block;
+font-size: 30px;
+color: yellow;
+
+
+ }
+ .footer .container p,h2{
+    color: var(--smoke-);
+    margin-bottom: 20px;
+   margin-top: 20px;
+ }
+
+ .footer .container h4{
+    font-style: italic;
+    color: var(--yellow-);
+    margin-bottom: 0px;
+ }
+ .footer .container span{
+color: #f2f7fb;
+font-style: italic;
+ }
+ .footer .container .conection i{
+    font-size: 30px;
+    padding-left: 5px;
+    justify-items: center;
+    color: var(--smoke-);
+ }
+ .footer .container .conection div{
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,25 @@
+<div class="container">
+
+    <table class="table"  >
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>lastName</th>
+          <th>Email</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of students">
+        <tr >
+          <td>{{item._id}}</td>
+          <td>{{item.fname}}</td>
+          <td>{{item.lname}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.score}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+</div>

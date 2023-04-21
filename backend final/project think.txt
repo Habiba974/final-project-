@@ -1,0 +1,89 @@
+student=> 1 singin =>done
+2 logout
+3 login 
+4 delet acount
+5 show test 
+6 do test and get resalt 
+
+==========================
+admin =>
+1 singin =>done
+2  add test
+3 edit test 
+4 remove test
+5 remove user=>done
+
+6 show all users=> done 
+7 show user with resalt
+8 finde user=>done 
+
+
+
+{
+  "subject":"math",  
+    "questions":[{
+        
+
+         "que":
+       "4+4="
+    ,
+    "answre":
+      "8" ,
+    "Options":[
+        
+        "12","8","10"]
+
+    },
+    
+    {
+        
+         "que":
+       "12*2="
+    ,
+    "answre":
+      "24" ,
+    "Options":[
+        
+        "24","34","20"]
+
+    },
+    
+    {
+        
+         "que":
+       "1*2="
+    ,
+    "answre":
+      "2" ,
+    "Options":[
+        
+        "3","1","2"]
+
+    },
+    {
+        
+         "que":
+       "(2*2)+15="
+    ,
+    "answre":
+      "19" ,
+    "Options":[
+        
+        "20","19","10"]
+
+    },
+    {
+        
+         "que":
+       "(2+2)*15="
+    ,
+    "answre":
+      "60" ,
+    "Options":[
+        
+        "60","19",""]
+
+    }
+    ]
+}
+

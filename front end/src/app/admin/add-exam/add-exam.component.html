@@ -1,0 +1,54 @@
+
+<div class="container">
+<form class="row g-3 border border-light-subtle mt-4 bg-body-tertiary"  #addExam="ngForm" (ngSubmit)="handleSubmit(addExam)">
+
+  <div class="col-12">
+    <input type="text" class="form-control" name="subject" placeholder="subject" aria-label="subject" [(ngModel)]="model.subject" name="subject" #subject="ngModel" required subject minlength="2">
+  <div class="alert alert-danger mt-2" *ngIf="addExam.submitted && subject.invalid">
+                <div *ngIf="subject.errors?.['required']">Subject is required</div>
+                </div>
+  </div>
+  <div class="col-12">
+    <input type="text" class="form-control" name=" que" placeholder="add quation" aria-label="add quation" [(ngModel)]="model. questions[0].que"  #que="ngModel" required  que minlength="3" maxlength="100">
+             <div class="alert alert-danger mt-2" *ngIf="addExam.submitted &&  que.invalid">
+                <div *ngIf=" que.errors?.['required']">Question is required</div>
+                <div *ngIf=" que.errors?.['minlength']">min length = 3</div>
+             </div>>
+  </div>
+
+  <div class="col-12">
+
+    <input type="text" name="answre" class="form-control" placeholder="answre" [(ngModel)]="model.questions[0].answre" name="answre" #answre="ngModel" required answre  maxlength="40">
+             <div class="alert alert-danger mt-2" *ngIf="addExam.submitted && answre.invalid">
+                <div *ngIf="answre.errors?.['required']">Answer is required</div>
+
+             </div>>
+  </div>
+  <div class="col-12 " >
+<label for="option" class="mb-2">Add options</label>
+    <input type="text" name="options" class="form-control mb-2" placeholder="option One " [(ngModel)]="model.questions[0].Options[0]" name="option" #option1="ngModel" required option1 minlength="1" maxlength="40">
+             <div class="alert alert-danger mt-2" *ngIf="addExam.submitted && option1.invalid">
+                <div *ngIf="option1.errors?.['required']">Option 1 is required</div></div>
+
+    <input type="text" name="options" class="form-control mb-2" placeholder="option Two " [(ngModel)]="model.questions[0].Options[1]" name="option2" #option2="ngModel" required option2 minlength="1" maxlength="40">
+             <div class="alert alert-danger mt-2" *ngIf="addExam.submitted && option2.invalid">
+                <div *ngIf="option2.errors?.['required']">Option 2 is required</div>
+                <div *ngIf="option2.errors?.['minlength']">min length = 1</div>
+             </div>
+
+    <input type="text" name="options" class="form-control mb-2" placeholder="option Three " [(ngModel)]="model.questions[0].Options[2]" name="option" #option3="ngModel" required option3 minlength="1" maxlength="40">
+             <div class="alert alert-danger mt-2" *ngIf="addExam.submitted && option1.invalid">
+                <div *ngIf="option1.errors?.['required']">Option 1 is required</div></div>
+
+  </div>
+
+
+
+  <div class="col-12 mb-3">
+    <button class="btn btn-primary" >Add</button>
+    <div class="alert alert-danger text-center mx-auto mt-3" *ngIf="msgError">
+            {{msgError}}
+        </div>
+  </div>
+</form>
+</div>

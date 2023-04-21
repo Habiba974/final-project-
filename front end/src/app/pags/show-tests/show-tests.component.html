@@ -1,0 +1,12 @@
+<div class="container mt-3 mb-3" *ngFor="let item of posts">
+<div class="card">
+  <h5 class="card-header">{{item.subject}}</h5>
+  <div class="card-body">
+    <!-- <h5 class="card-title">Special title treatment</h5> -->
+    <p class="card-text">Test yourself, take the exam, and evaluate your studies</p>
+    <a  class="btn btn-primary" routerLink="/showSingleExam/{{item._id}}">Take Exam</a>
+  </div>
+</div>
+
+
+</div>
